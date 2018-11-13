@@ -13,7 +13,7 @@ window.onload = function() {
 	core.preload( 'chara1.png' ) ;
 	core.fps = 15 ;
 	core.onload = function() {
-/*
+
 		var bear = new Sprite( 32, 32 ) ;
 		bear.image = core.assets[ 'chara1.png' ] ;
 		bear.x = 0 ;
@@ -56,7 +56,7 @@ window.onload = function() {
 		// label.on( 'enterframe', function() {
 		//	label.text = ( core.frame / core.fps ).toFixed( 2 ) ;
 		// } ) ;
-*/
+/*
 		var Bear = Class.create( Sprite, {
 			initialize: function( x, y ) {
 				Sprite.call( this, 32, 32 ) ;
@@ -65,12 +65,6 @@ window.onload = function() {
 				this.frame = rand( 5 ) ;
 				this.image = core.assets[ 'chara1.png' ] ;
 				this.opacity = rand( 100 ) / 100 ;
-/*
-				this.on( 'enterframe', function() {
-					// this.x += 5 ;
-					this.rotate( rand( 10 ) ) ;
-				} ) ;
-*/
 				this.tl.moveBy( rand( 100 ), 0, 40, enchant.Easing.BOUNCE_EASEOUT )
 						.moveBy( -rand( 100 ), -rand( 20 ), rand( 20 ) )
 						.fadeOut( 20 )
@@ -84,7 +78,7 @@ window.onload = function() {
 		for ( var i = 0 ; i < 100 ; i ++ ) {
 			bears[ i ] = new Bear( rand( 320 ), rand( 320 ) ) ;
 		}
-
+*/
 	}
 	core.start();
 }
