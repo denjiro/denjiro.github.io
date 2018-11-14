@@ -11,6 +11,7 @@ window.onload = function() {
 
 	var core = new Core( 320, 320 ) ;
 	core.preload( 'chara1.png' ) ;
+	core.preload( 'dtb_fade.wav' ) ;
 	core.fps = 15 ;
 	core.onload = function() {
 
@@ -79,6 +80,8 @@ window.onload = function() {
 			bears[ i ] = new Bear( rand( 320 ), rand( 320 ) ) ;
 		}
 */
+
+		core.assets[ "dtb_fade.wav" ].play() ;
 	}
 	core.start();
 }
